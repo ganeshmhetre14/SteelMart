@@ -49,8 +49,7 @@ The website consists of the following pages:
 ## Screenshots
 
 ### Home Page
-![Home Page](/api/placeholder/800/450)
-
+SteelMart/ScreenShots/Home1.png
 ### Products Page
 ![Products Page](/api/placeholder/800/450)
 
