@@ -1,9 +1,6 @@
 # SteelMart
 
-# Steel Mart
-
-![Steel Mart Logo](/api/placeholder/800/200)
-![Uploading Home1.png…]()
+![logo](https://github.com/user-attachments/assets/66bc52ae-ad0c-4d98-9fb4-e4d56d5d3fd0)
 
 ## Overview
 
@@ -50,12 +47,18 @@ The website consists of the following pages:
 ## Screenshots
 
 ### Home Page
-SteelMart/ScreenShots/Home1.png
+![Home1](https://github.com/user-attachments/assets/7e821e71-ff50-4510-b0c0-2ad8cd75bac7)
+
 ### Products Page
-![Products Page](/api/placeholder/800/450)
+![Products_page1](https://github.com/user-attachments/assets/ad5e94ee-1d70-4b68-8c6c-76dc992558df)
+![Products_page2](https://github.com/user-attachments/assets/2ae9e175-9865-4358-8747-5b1019ed0644)
+
+### Product Details
+![products_details1](https://github.com/user-attachments/assets/7ac07d55-944b-4993-a339-3d98312d794e)
 
 ### Shopping Cart
-![Shopping Cart](/api/placeholder/800/450)
+![cart](https://github.com/user-attachments/assets/c4d005bd-6022-407e-9ef4-3290ff225af2)
+
 
 ## Technology Stack
 
@@ -166,4 +169,4 @@ steel-mart/
 
 ## Support
 
-For support, please email ganeshmhetre275@steelmart.com or open an issue on the GitHub repository.
+For support, please email ganeshmhetre275@gmail.com or open an issue on the GitHub repository.
