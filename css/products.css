@@ -1,0 +1,182 @@
+/* Base Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Filtering Section */
+.product-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.filter-section h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Categories Styling */
+.categories-list {
+    list-style: none;
+}
+
+.categories-list li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.categories-list li:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Price Range Styling */
+.price-range {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-range input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    accent-color: #007bff;
+}
+
+.price-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-inputs input {
+    width: 45%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Material Grade Styling */
+.material-grades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.material-grade {
+    display: flex;
+    align-items: center;
+}
+
+.material-grade input {
+    margin-right: 8px;
+}
+
+/* Finish Type Styling */
+.finish-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.finish-type {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.finish-type:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .product-filter {
+        flex-direction: column;
+    }
+
+    .filter-section {
+        min-width: 100%;
+    }
+
+    .material-grades {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Active and Selected States */
+.categories-list li.active,
+.finish-type.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Checkbox and Radio Button Styling */
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after,
+input[type="radio"]:checked::after {
+    content: '✔';
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

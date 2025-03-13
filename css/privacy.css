@@ -1,0 +1,162 @@
+/* Privacy & Terms Page Styles */
+.legal-content {
+    padding: 60px 0;
+}
+
+.tab-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: #2a5885;
+    border-bottom-color: #2a5885;
+}
+
+.tab-btn:hover {
+    color: #2a5885;
+}
+
+.tab-content {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-pane {
+    display: none;
+    padding: 30px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    color: #2a5885;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.last-updated {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.policy-section {
+    margin-bottom: 30px;
+}
+
+.policy-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.policy-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.policy-section ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.policy-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.policy-section strong {
+    font-weight: 600;
+    color: #444;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 40px 0;
+    }
+    
+    .tab-buttons {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 5px;
+        justify-content: flex-start;
+    }
+    
+    .tab-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .tab-pane {
+        padding: 20px;
+    }
+    
+    .tab-pane h2 {
+        font-size: 22px;
+    }
+    
+    .policy-section h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    .tab-pane {
+        padding: 15px;
+    }
+    
+    .tab-pane h2 {
+        font-size: 20px;
+    }
+    
+    .policy-section h3 {
+        font-size: 16px;
+    }
+    
+    .policy-section p, .policy-section li {
+        font-size: 14px;
+    }
+}

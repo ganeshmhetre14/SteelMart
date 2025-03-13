@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Portal</h1>
+            <p class="subtitle">Find what you're looking for quickly and easily</p>
+        </header>
+        
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for anything...">
+                <button id="searchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="filter-container">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="products">Products</option>
+                    <option value="services">Services</option>
+                    <option value="articles">Articles</option>
+                    <option value="support">Support</option>
+                </select>
+                
+                <div class="sort-options">
+                    <label for="sortOrder">Sort by:</label>
+                    <select id="sortOrder">
+                        <option value="relevance">Relevance</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-container">
+            <div class="results-info">
+                <p id="resultsCount">0 results found</p>
+                <div class="view-options">
+                    <button id="gridView" class="view-btn active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </button>
+                    <button id="listView" class="view-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="searchResults" class="results-grid">
+                <!-- Results will be inserted here by JavaScript -->
+                <div class="no-results">
+                    <p>Enter a search term to see results</p>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button id="prevPage" disabled>Previous</button>
+                <div id="pageNumbers">
+                    <span class="current-page">1</span>
+                </div>
+                <button id="nextPage" disabled>Next</button>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <p>Searching...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
